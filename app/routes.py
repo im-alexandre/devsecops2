@@ -1,5 +1,5 @@
-from pathlib import Path
 import sqlite3
+from pathlib import Path
 
 from flask import Flask, jsonify, request
 
@@ -36,6 +36,7 @@ def inicializar_banco():
 def buscar_clientes():
     nome = request.args.get("nome", "")
     sql = "SELECT id, nome, email FROM clientes WHERE nome = '" + nome + "'"
+    print(sql)
 
     with conectar() as conn:
         resultados = conn.execute(sql).fetchall()
