@@ -1,0 +1,7 @@
+{
+  "rule": "python.sql-injection",
+  "severity": "ERROR",
+  "path": "app/routes.py",
+  "line": 38,
+  "message": "User input reaches SQL query"
+}

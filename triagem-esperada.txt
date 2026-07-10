@@ -1,0 +1,5 @@
+Decisão: corrigir.
+Evidência: o parâmetro nome vem da requisição e é concatenado diretamente na query SQL.
+Prioridade: alta.
+Ação recomendada: parametrizar a consulta e criar teste de regressão.
+Registro técnico: app/routes.py, linha 38, regra python.sql-injection.
